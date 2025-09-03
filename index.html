@@ -4,44 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Comfort Savings</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Cut energy bills without sacrificing comfort. Reviews and guides on smart thermostats, heat pumps, and home energy upgrades.">
   <link rel="canonical" href="https://example.com/">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Home Comfort Savings",
-    "url": "https://example.com/"
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Home Comfort Savings",
+    "url":"https://example.com/"
   }
   </script>
 </head>
 <body>
   
-<nav>
-  <a href="index.html">Home</a> |
-  <a href="blog1.html">Blog 1</a> |
-  <a href="blog2.html">Blog 2</a> |
-  <a href="blog3.html">Blog 3</a> |
-  <a href="about.html">About</a> |
-  <a href="contact.html">Contact</a> |
-  <a href="privacy.html">Privacy</a> |
-  <a href="terms.html">Terms</a>
-</nav>
-
-  <h1>Welcome to Home Comfort Savings</h1>
-  <p>Your resource for lowering energy bills with smart thermostats, heat pumps, and proven energy hacks.</p>
-
-  <h2>Featured Product</h2>
-  <p><a href="https://www.amazon.com/dp/B00NR1YQK4?tag=your-affiliate-id">Check out this smart thermostat</a></p>
-
-  <div id="adsense-placeholder">
-    <!-- Google AdSense placeholder -->
-    <p>[AdSense Ad Slot Here - replace with your client ID]</p>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" style="font-weight:800; color:#0b3c49; text-decoration:none;">Home Comfort Savings</a>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog1.html">Blog 1</a></li>
+        <li><a href="blog2.html">Blog 2</a></li>
+        <li><a href="blog3.html">Blog 3</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <h2>Subscribe to our Newsletter</h2>
-  <form action="https://youremailprovider.com/subscribe" method="post">
-    <input type="email" name="email" placeholder="Enter your email" required>
-    <button type="submit">Subscribe</button>
-  </form>
+
+  <section class="hero-banner">
+    <div class="hero-media"></div>
+    <div class="container hero-inner">
+      <div class="hero">
+        <div>
+          <span class="badge">Start Saving</span>
+          <h1 class="title">Cut Energy Bills. Stay Comfortable.</h1>
+          <p>Expert-backed product picks and practical upgrades to lower your utility costs—fast.</p>
+          <p><a class="btn" href="blog1.html">See Best Smart Thermostats</a></p>
+          <p class="notice">As an Amazon Associate, we earn from qualifying purchases.</p>
+        </div>
+        <div class="card">
+          <h3>Get the 12-Step Energy Savings Checklist</h3>
+          <p>Join 1,000+ homeowners who’ve lowered their bills this year.</p>
+          <form class="form" action="https://youremailprovider.com/subscribe" method="post">
+            <input type="email" name="email" placeholder="Email address" required>
+            <button type="submit">Send me the checklist</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="section">
+      <h2>Featured Guides</h2>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="blog1.html">Best Smart Thermostats in 2025</a></h3>
+          <p>Save up to 10% on heating & cooling with the right thermostat. See our picks.</p>
+        </article>
+        <article class="card">
+          <h3><a href="blog2.html">Mini-Split vs Central Heat Pump</a></h3>
+          <p>Which saves more in real life? We break down costs, comfort, and ROI.</p>
+        </article>
+        <article class="card">
+          <h3><a href="blog3.html">Cut Your Power Bill by 20%</a></h3>
+          <p>Practical tweaks most homes can do this month.</p>
+        </article>
+      </div>
+      <div class="adsense-placeholder">AdSense Placeholder (homepage)</div>
+    </section>
+
+    <section class="section">
+      <h2>What Readers Are Saying</h2>
+      <div class="testimonials">
+        <div class="testimonial"><strong>“Saved $38/month”</strong><br><span class="kicker">— Alex R.</span><p>Swapped our thermostat and sealed air leaks using your checklist.</p></div>
+        <div class="testimonial"><strong>“Clear and practical”</strong><br><span class="kicker">— Dana T.</span><p>The mini-split vs central guide made our decision easy.</p></div>
+        <div class="testimonial"><strong>“Great product picks”</strong><br><span class="kicker">— Chris L.</span><p>Your comparison table was exactly what I needed.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div><span class="kicker">© <span id="year"></span> Home Comfort Savings</span></div>
+      <form class="form" action="https://youremailprovider.com/subscribe" method="post">
+        <input type="email" name="email" placeholder="Get weekly energy-saving tips" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
