@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Terms - Home Comfort Savings</title>
-  <meta name="description" content="Terms of use.">
+  <meta name="description" content="Terms of use">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,12 +11,17 @@
 <header class="site-header">
   <div class="container navbar">
     <a class="brand" href="index.html" style="font-weight:800; color:#0b3c49; text-decoration:none;">Home Comfort Savings</a>
-    <nav class="nav">
+    <nav class="nav" aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="blog1.html">Blog 1</a></li>
-        <li><a href="blog2.html">Blog 2</a></li>
-        <li><a href="blog3.html">Blog 3</a></li>
+        <li>
+          <a href="blog1.html" aria-haspopup="true" aria-expanded="false">Guides</a>
+          <div class="submenu" role="menu" aria-label="Guides submenu">
+            <a role="menuitem" href="blog1.html">Smart Thermostats</a>
+            <a role="menuitem" href="blog2.html">Heating Guides</a>
+            <a role="menuitem" href="blog3.html">DIY Tips</a>
+          </div>
+        </li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="privacy.html">Privacy</a></li>
@@ -26,10 +31,8 @@
   </div>
 </header>
 
-  <main class="container"><div class="card"><h1>Terms</h1>
-<p>All content is provided for informational purposes only and does not constitute professional advice. Use at your own discretion.</p>
-</div></main>
-  <footer class="site-footer"><div class="container footer-wrap"><span class="kicker">© <span id="year"></span> Home Comfort Savings</span></div></footer>
+  <main class="container"><div class="card"><h1>Terms</h1><p>All content is provided for informational purposes only and does not constitute professional advice. Use at your own discretion.</p></div></main>
+  <footer class="site-footer"><div class="container footer-wrap"><span class="meta">© <span id="year"></span> Home Comfort Savings</span></div></footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

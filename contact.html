@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Contact - Home Comfort Savings</title>
-  <meta name="description" content="Contact the Home Comfort Savings team.">
+  <meta name="description" content="Contact the Home Comfort Savings team">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,12 +11,17 @@
 <header class="site-header">
   <div class="container navbar">
     <a class="brand" href="index.html" style="font-weight:800; color:#0b3c49; text-decoration:none;">Home Comfort Savings</a>
-    <nav class="nav">
+    <nav class="nav" aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="blog1.html">Blog 1</a></li>
-        <li><a href="blog2.html">Blog 2</a></li>
-        <li><a href="blog3.html">Blog 3</a></li>
+        <li>
+          <a href="blog1.html" aria-haspopup="true" aria-expanded="false">Guides</a>
+          <div class="submenu" role="menu" aria-label="Guides submenu">
+            <a role="menuitem" href="blog1.html">Smart Thermostats</a>
+            <a role="menuitem" href="blog2.html">Heating Guides</a>
+            <a role="menuitem" href="blog3.html">DIY Tips</a>
+          </div>
+        </li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="privacy.html">Privacy</a></li>
@@ -26,19 +31,8 @@
   </div>
 </header>
 
-  <main class="container"><div class="card"><h1>Contact</h1>
-<p>We’d love to hear from you. For general questions, feedback, or partnership inquiries, email us at <a href="mailto:support@example.com">support@example.com</a>.</p>
-<h2>Partnerships & Sponsorships</h2>
-<p>Tell us about your product, audience fit, budget, and timeline. We’ll reply within 2 business days.</p>
-<form name="contact" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="contact">
-  <p><label>Your Name<br><input type="text" name="name" required></label></p>
-  <p><label>Your Email<br><input type="email" name="email" required></label></p>
-  <p><label>Message<br><textarea name="message" rows="5" required></textarea></label></p>
-  <p><button class="btn alt" type="submit">Send</button></p>
-</form>
-</div></main>
-  <footer class="site-footer"><div class="container footer-wrap"><span class="kicker">© <span id="year"></span> Home Comfort Savings</span></div></footer>
+  <main class="container"><div class="card"><h1>Contact</h1><p>Questions or feedback? Email us at <a href="mailto:support@example.com">support@example.com</a>.</p></div></main>
+  <footer class="site-footer"><div class="container footer-wrap"><span class="meta">© <span id="year"></span> Home Comfort Savings</span></div></footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
