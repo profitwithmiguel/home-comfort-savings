@@ -1,9 +1,4 @@
-:root {
-  --bg:#f8fafc; --fg:#0f172a; --muted:#64748b;
-  --brand:#116a5d; --brand-accent:#f59e0b; --brand-dark:#0b3c49;
-  --card:#ffffff; --border:#e2e8f0;
-  --radius:16px; --shadow:0 12px 32px rgba(0,0,0,.06); --maxw:1140px;
-}
+:root { --bg:#f8fafc; --fg:#0f172a; --muted:#64748b; --brand:#116a5d; --brand-accent:#f59e0b; --brand-dark:#0b3c49; --card:#ffffff; --border:#e2e8f0; --radius:16px; --shadow:0 12px 32px rgba(0,0,0,.06); --maxw:1140px; }
 *{box-sizing:border-box} html,body{margin:0;padding:0}
 body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial; color:#0f172a; background:#f8fafc; line-height:1.65}
 .container{max-width:1140px; margin:0 auto; padding:0 22px}
@@ -48,6 +43,13 @@ footer.site-footer{border-top:1px solid #e2e8f0; background:#fff; margin-top:36p
 .form input[type=email]{padding:10px 12px; border:1px solid #e2e8f0; border-radius:10px; min-width:240px}
 .form button{border:0; background:#0b3c49; color:#fff; padding:10px 16px; border-radius:10px}
 @media (max-width:900px){ .hero{grid-template-columns:1fr} }
-.blog-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px}
-.pagination{display:flex; gap:8px; justify-content:center; margin:16px 0}
-.pagination a{padding:8px 12px; border:1px solid #e2e8f0; border-radius:10px}
+.layout{display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:22px}
+@media (max-width:960px){ .layout{grid-template-columns:1fr} }
+.aside{position:sticky; top:84px; align-self:start}
+.aside .box{background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:16px; box-shadow:0 12px 32px rgba(0,0,0,.06)}
+.aside .box h3{margin-top:0}
+ul.picks{list-style:none; padding:0; margin:0}
+ul.picks li{display:flex; align-items:center; gap:10px; padding:8px 0; border-bottom:1px dashed #e2e8f0}
+ul.picks li:last-child{border-bottom:0}
+.badge-small{font-size:11px; padding:2px 6px; background:#e6fbf7; color:#0b3c49; border-radius:999px}
+.ad-block{margin:18px 0; text-align:center}
